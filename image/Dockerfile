@@ -23,6 +23,6 @@ RUN pip install --quiet --no-cache-dir \
 #        ipykernel \
 #        pylatexenc \
 #        pylatex &&\
-        python -m qat.magics.install && \
+#        python -m qat.magics.install && \
         fix-permissions "${CONDA_DIR}" && \
         fix-permissions "/home/${NB_USER}" 
