@@ -10,7 +10,7 @@ FROM jupyter/base-notebook
 RUN pip install --quiet --no-cache-dir \
 # OPENQASM
 	openqasm  \
-# QISKIT IBM https://qiskit.org/
+# QISKIT from IBM https://qiskit.org/
         qiskit \
 # CIRQ from https://github.com/quantumlib/cirq
         cirq 
