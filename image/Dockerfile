@@ -12,5 +12,5 @@ RUN pip install --quiet --no-cache-dir \
 	openqasm  \
 # QISKIT IBM https://qiskit.org/
         qiskit \
-# CIRQ https://github.com/quantumlib/cirq
+# CIRQ from https://github.com/quantumlib/cirq
         cirq 
