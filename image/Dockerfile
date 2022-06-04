@@ -13,16 +13,16 @@ RUN pip install --quiet --no-cache-dir \
 # QISKIT from IBM https://qiskit.org/
         qiskit \
 # CIRQ from https://github.com/quantumlib/cirq
-        cirq \
+        cirq && \
 # myQLM  https://myqlm.github.io/myqlm_specific/install.html
-        myqlm myqlm-interop \
+#        myqlm myqlm-interop \
 # PyQUIL from righetti  https://github.com/rigetti/pyquil
-        pyquil \
+#        pyquil \
 # ProkjectQ https://projectq.readthedocs.io/en/latest/index.html
-        projectq \
-        ipykernel \
-        pylatexenc \
-        pylatex &&\
+#        projectq \
+#        ipykernel \
+#        pylatexenc \
+#        pylatex &&\
         python -m qat.magics.install && \
         fix-permissions "${CONDA_DIR}" && \
         fix-permissions "/home/${NB_USER}" 
